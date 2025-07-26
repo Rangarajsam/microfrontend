@@ -13,7 +13,7 @@ import MarketingApp from "./components/MarketingApp";
 export default () => {
     return (
       <div>
-        <h1>Hi, I am the container App running others updated with access</h1>
+        <h1>Hi, I am the updated container App!</h1>
         <hr />
         <MarketingApp />
       </div>
