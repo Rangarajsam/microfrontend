@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Router } from 'react-router-dom';
 import { StylesProvider } from '@material-ui/core/styles';
 import SignIn from './components/Signin';
-import SignUp from './components/SignUp';
+import SignUp from './components/Signup';
 
 export default ({history, isSignIn}) => {
     return (
