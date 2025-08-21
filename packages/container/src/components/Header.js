@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Header({ signedIn, onSignOut }) {
+export default function Header({ isSignedIn, onSignOut }) {
   const handleClick = () => {
-    if (signedIn && onSignOut) {
+    if (isSignedIn && onSignOut) {
       onSignOut();
     }
   };
@@ -40,11 +40,11 @@ export default function Header({ signedIn, onSignOut }) {
       </div>
       <div>
         <a
-          href={signedIn ? '/' : '/login'}
-          onClick={signedIn ? handleClick : undefined}
+          href={isSignedIn ? '/' : '/auth/signin'}
+          onClick={isSignedIn ? handleClick : undefined}
           style={buttonStyle}
         >
-          {signedIn ? 'Logout' : 'Login'}
+          {isSignedIn ? 'Logout' : 'Login'}
         </a>
       </div>
     </header>
