@@ -7,6 +7,19 @@ export default function Header({ isSignedIn, onSignOut }) {
     }
   };
 
+  // const goToHome = () => {
+  //   history.push("/");
+  // }
+
+  // const goToSignIn = () => {
+  //   if(isSignedIn && onSignOut) {
+  //     onSignOut();
+  //   }
+  //   if(!isSignedIn) {
+  //     history.push('/auth/signin')
+  //   }
+  // }
+
   const headerStyle = {
     display: 'flex',
     justifyContent: 'space-between',
