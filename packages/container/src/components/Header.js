@@ -3,6 +3,7 @@ import React from 'react';
 export default function Header({ isSignedIn, onSignOut }) {
   const handleClick = () => {
     if (isSignedIn && onSignOut) {
+      // signing out
       onSignOut();
     }
   };
